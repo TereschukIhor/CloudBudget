@@ -110,6 +110,7 @@ window.addEventListener('resize', () => {
         if (menuNav.classList.contains('_show-menu')) {
             menuNav.classList.remove('_show-menu');
             menuBtn.classList.remove('_line-chenge');
+            body.classList.toggle('_lock');
             headerActions.insertAdjacentElement('afterbegin', signInBtn);
             headerActions.insertAdjacentElement('afterbegin', schemeHeader);
         } else {

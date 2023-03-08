@@ -96,6 +96,15 @@
     }
 }
 
+@media (max-width: 768px) {
+    .main-block {
+        background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url(img/main-bg-mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
 /*************** simple-block ***************/
 
 .simple-block {

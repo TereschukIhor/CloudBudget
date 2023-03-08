@@ -1,0 +1,241 @@
+/******************** light theme ********************/
+
+.wrapper,
+.header,
+.main,
+.footer {
+    background-color: #ffffff;
+}
+
+/*************** scheme ***************/
+
+.scheme {
+    border: 2px solid #f3f3f3;
+    background-color: transparent;
+}
+.scheme__decor {
+    background-color: #f3f3f3;
+}
+.icon-light-theme,
+.icon-auto-theme,
+.icon-dark-theme {
+    color: #f3f3f3;
+}
+.icon-light-theme:checked,
+.icon-auto-theme:checked,
+.icon-dark-theme:checked {
+    color: #ED4C5C;
+}
+
+/*************** header ***************/
+
+.header._showHeader {
+    background-color: #ED4C5C;
+    box-shadow: 0 2px 6px #ffffff;
+}
+.logo__link-icon,
+.logo__link-title,
+.menu-link {
+    color: #ffffff;   
+}
+.sign-in__link {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+}
+.menu-btn__line {
+    background-color: #ffffff;
+}
+
+@media (any-hover: hover) {
+    .sign-in__link:hover {
+        color: #ED4C5C;
+        border: 1px solid #ED4C5C;
+        background-color: #ffffff;
+    }
+    .menu-link::before {
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-nav {
+        background-color: #ffffff;
+    }
+    .menu-nav::before {
+        background-color: #ED4C5C;
+    }
+    .menu-link {
+        color: #ED4C5C;
+    }
+}
+
+/*************** main-block ***************/
+
+.main-block {
+    background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url(img/main-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.main__title,
+.main__subtitle {
+    color: #ffffff;
+}
+.main__link {
+    color: #ED4C5C;
+    border: 1px solid transparent;
+    background-color: #ffffff; 
+}
+
+@media (any-hover: hover) {
+    .main__link:hover {
+        color: #ffffff;
+        border-color: #ffffff;
+        background-color: transparent;
+    }
+}
+
+/*************** simple-block ***************/
+
+.simple-block {
+    background-color: #ffffff;
+}
+.simple-text__title,
+.simple-text__subtitle {
+    color: #000000;
+}
+.simple-text__link {
+    color: #ED4C5C;
+}
+
+@media (any-hover: hover) {
+    .simple-text__link:hover {
+        color: #000000;
+    }
+}
+
+/*************** opportunities-block ***************/
+
+.opportunities-block {
+    background-color: #ffffff;
+}
+.item-opportunities__text-block {
+    background-color: #ffffff;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+}
+.opportunities-title,
+.item-opportunities__text-title,
+.item-opportunities__text-subtitle {
+    color: #000000;
+}
+.item-opportunities__text-link {
+    color: #ED4C5C;
+}
+
+@media (any-hover: hover) {
+    .item-opportunities__text-link:hover {
+        color: #000000;
+    }
+}
+
+/*************** technologies-block ***************/
+
+.technologies-block {
+    background-color: #ffffff;
+}
+.technologies-title,
+.item-technologies__text-title,
+.item-technologies__text-subtitle {
+    color: #000000;
+}
+.item-technologies:nth-child(1) .item-technologies__img-block {
+    background: url(img/technologies-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.item-technologies:nth-child(2) .item-technologies__img-block {
+    background: url(img/technologies-bg2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.item-technologies:nth-child(3) .item-technologies__img-block {
+    background: url(img/technologies-bg3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.item-technologies:nth-child(4) .item-technologies__img-block {
+    background: url(img/technologies-bg4.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*************** link-block ***************/
+
+.link-block {
+    background-color: #ED4C5C;
+}
+.link-text__title,
+.link-text__subtitle,
+.link-block__link-icon {
+    color: #ffffff;
+}
+
+@media (any-hover: hover) {
+    .link-block__link-icon:hover {
+        color: #000000;
+    }
+}
+
+/*************** email-block ***************/
+
+.email-block {
+    background-color: #ffffff;
+}
+.email-text__title,
+.email-text__subtitle {
+    color: #000000;
+}
+.email-form__name,
+.email-form__phone {
+    border: 1px solid #333333;
+    background-color: #ffffff;
+    color: #333333;
+}
+.email-form__name::placeholder,
+.email-form__phone::placeholder {
+    color: rgba(33, 33, 33, 0.5);
+}
+.email-form__name:focus,
+.email-form__phone:focus,
+.email-form__name:focus-visible,
+.email-form__phone:focus-visible {
+    outline-color: #000000;
+}
+.email-form__btn {
+    border: 1px solid #ED4C5C;
+    background-color: #ED4C5C;
+    color: #ffffff;
+}
+.email-form__btn:focus,
+.email-form__btn:focus-visible {
+    outline-color: #000000;
+}
+@media (any-hover: hover) {
+    .email-form__btn:hover {
+        color: #ED4C5C;
+        border-color: #ED4C5C;
+        background-color: #ffffff;
+    }
+}
+
+/*************** footer ***************/
+
+.footer-block {
+    background-color: #FAFAFA;
+}
+.footer__title,
+.footer__subtitle,
+.footer__copyright {
+    color: #101010;
+}

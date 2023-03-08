@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="color-scheme" content="light dark"> -->
+    <script>
+        if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+            document.documentElement.style.display = 'none';
+            document.head.insertAdjacentHTML(
+                'beforeend',
+                '<link rel="stylesheet" href="styles/light.css" onload="document.documentElement.style.display=\'\'">'
+            )
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="icons.css">
+    <link rel="stylesheet" href="dark.css" media="(prefers-color-scheme: dark)" id="darkStyles">
+    <link rel="stylesheet" href="light.css" media="(prefers-color-scheme: light)" id="lightStyles">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo-favicon.svg" type="image/x-icon">
+    <title>CloudBudget</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="header-logo logo-header">
+                    <a href="" class="logo__link">
+                        <p class="logo__link-icon icon-logo"></p>
+                        <p class="logo__link-title">CloudBudget</p>
+                    </a>
+                </div>
+                <div class="header-menu menu-header">
+                    <nav class="menu-nav">
+                        <div class="menu-actions"></div>
+                        <ul class="menu-ul">
+                            <li class="menu-li"><a href="" class="menu-link">ОБЗОР</a></li>
+                            <li class="menu-li"><a href="" class="menu-link">ОСОБЕННОСТИ</a></li>
+                            <li class="menu-li"><a href="" class="menu-link">ТЕХНОЛОГИЯ</a></li>
+                            <li class="menu-li"><a href="" class="menu-link">КОНТАКТЫ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-actions actions-header">
+                    <div class="actions__color-scheme scheme">
+                        <input class="scheme__input icon-light-theme" type="radio" name="scheme">
+                        <input class="scheme__input icon-auto-theme" type="radio" name="scheme" checked>
+                        <input class="scheme__input icon-dark-theme" type="radio" name="scheme">
+                        <span class="scheme__decor"></span>
+                    </div>
+                    <div class="actions__sign-in sign-in__actions">
+                        <a href="" class="sign-in__link">ВХОД</a>
+                    </div>
+                    <button class="actions__menu-btn menu-btn__actions">
+                        <span class="menu-btn__line"></span>
+                        <span class="menu-btn__line"></span>
+                        <span class="menu-btn__line"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main-block">
+                <div class="main-container">
+                    <h1 class="main__title">CloudBudget</h1>
+                    <p class="main__subtitle">
+                        Управление бюджетом в для всех. 
+                        Всего 69,95 € в месяц после 7-дневной пробной версии за 4,99 €
+                    </p>
+                    <a href="" class="main__link">ПОПРОБОВАТЬ</a>
+                </div>
+            </section>
+            <section class="simple-block">
+                <div class="simple-container">
+                    <div class="simple-text-block">
+                        <h3 class="simple-text__title">
+                            Простое приложение для управления бюджетом
+                        </h3>
+                        <p class="simple-text__subtitle">
+                            Наше приложение создано, чтобы вы могли в реальном времени управлять 
+                            своим бюджетом и расходами в режиме онлайн с любого устройства. 
+                            Оно предоставляет подробные отчеты о доходах и расходах с графиками, 
+                            чтобы вы сразу могли увидеть расходы и бюджет. 
+                            Читайте ниже, чтобы узнать больше.
+                        </p>
+                        <p class="simple-text__link-center">
+                            <a href="" class="simple-text__link">Узнать подробнее</a>
+                        </p>
+                    </div>
+                    <div class="simple-img-block">
+                        <img src="img/simple-img.png" alt="our team">
+                    </div>
+                </div>
+            </section>
+            <section class="opportunities-block">
+                <div class="opportunities-container">
+                    <h3 class="opportunities-title">Возможности</h3>
+                    <div class="opportunities-items">
+                        <div class="opportunities-item item-opportunities">
+                            <div class="item-opportunities__img-block">
+                                <img src="img/opportunities-img.png" alt="opportunities">
+                            </div>
+                            <div class="item-opportunities__text-block">
+                                <h4 class="item-opportunities__text-title">Поддерживает все валюты и карты</h4>
+                                <p class="item-opportunities__text-subtitle">Мы поддерживаем все популярные валюты и полностью настраиваем, чтобы добавить</p>
+                                <p class="item-opportunities__text-link-center">
+                                    <a href="" class="item-opportunities__text-link">Подробнее</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="opportunities-item item-opportunities">
+                            <div class="item-opportunities__img-block">
+                                <img src="img/opportunities-img2.png" alt="opportunities">
+                            </div>
+                            <div class="item-opportunities__text-block">
+                                <h4 class="item-opportunities__text-title">Управляйте своими расходами на ходу</h4>
+                                <p class="item-opportunities__text-subtitle">Вы можете получить доступ к своей учетной записи из любой точки мира на любом устройстве</p>
+                                <p class="item-opportunities__text-link-center">
+                                    <a href="" class="item-opportunities__text-link">Подробнее</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="opportunities-item item-opportunities">
+                            <div class="item-opportunities__img-block">
+                                <img src="img/opportunities-img3.png" alt="opportunities">
+                            </div>
+                            <div class="item-opportunities__text-block">
+                                <h4 class="item-opportunities__text-title">Управление бюджетом осуществляется в облаке</h4>
+                                <p class="item-opportunities__text-subtitle">Наше приложение создано для того, чтобы вы могли управлять управлять своим бюджетом. </p>
+                                <p class="item-opportunities__text-link-center">
+                                    <a href="" class="item-opportunities__text-link">Подробнее</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="technologies-block">
+                <div class="technologies-container">
+                    <h3 class="technologies-title">Технологии</h3>
+                    <div class="technologies-items">
+                        <div class="technologies-item item-technologies">
+                            <div class="item-technologies__img-block">
+                                <img src="img/technologies-img.svg" alt="cloud storage icon">
+                                <img class="item-technologies__img-line" src="img/technologies-img-line.svg" alt="cloud storage icon">
+                            </div>
+                            <div class="item-technologies__text-block">
+                                <h4 class="item-technologies__text-title">Облачное хранение</h4>
+                                <p class="item-technologies__text-subtitle">
+                                    Доступ из любой точки мира с любого устройства
+                                </p>
+                            </div>
+                        </div>
+                        <div class="technologies-item item-technologies">
+                            <div class="item-technologies__img-block">
+                                <img src="img/technologies-img2.svg" alt="security icon">
+                            </div>
+                            <div class="item-technologies__text-block">
+                                <h4 class="item-technologies__text-title">Безопасность</h4>
+                                <p class="item-technologies__text-subtitle">
+                                    Вся  информация хранится на защищенных облачных серверах
+                                </p>
+                            </div>
+                        </div>
+                        <div class="technologies-item item-technologies">
+                            <div class="item-technologies__img-block">
+                                <img src="img/technologies-img3.svg" alt="pdf file icon">
+                            </div>
+                            <div class="item-technologies__text-block">
+                                <h4 class="item-technologies__text-title">PDF Отчеты</h4>
+                                <p class="item-technologies__text-subtitle">
+                                    Скачивайте ваши отчеты в удобном формате PDF
+                                </p>
+                            </div>
+                        </div>
+                        <div class="technologies-item item-technologies">
+                            <div class="item-technologies__img-block">
+                                <img src="img/technologies-img4.svg" alt="csv file icon">
+                            </div>
+                            <div class="item-technologies__text-block">
+                                <h4 class="item-technologies__text-title">CSV Отчеты</h4>
+                                <p class="item-technologies__text-subtitle">
+                                    Скачивайте ваши отчеты в удобном формате CSV
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="link-block">
+                <div class="link-container">
+                    <div class="link-text-block">
+                        <h3 class="link-text__title">
+                            Сосредоточьтесь на экономии денег
+                        </h3>
+                        <p class="link-text__subtitle">
+                            Мы помогаем вам отслеживать ваши привычки в расходах, 
+                            чтобы вы могли легко определить и сократить ненужные расходы. 
+                            Просто присоединяйтесь сегодня, чтобы начать!
+                        </p>
+                        <div class="link-text__link-block link-block__link">
+                            <p class="link-block__link-center">
+                                <a href="" class="link-block__link-icon icon-google-play"></a>
+                            </p>
+                            <p class="link-block__link-center">
+                                <a href="" class="link-block__link-icon icon-appstore"></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="link-img-block">
+                        <img src="img/link-img.png" alt="save money">
+                    </div>
+                </div>
+            </section>
+            <section class="email-block">
+                <div class="email-container">
+                    <div class="email-text-block">
+                        <h3 class="email-text__title">Напишите нам</h3>
+                        <p class="email-text__subtitle">
+                            Остались вопросы или опасения? Просто заполните форму ниже, 
+                            и наша служба поддержки свяжется с вами в течение 24 часов.
+                        </p>
+                    </div>
+                    <div class="email-form-block">
+                        <form class="email-form" action="" name="email-form" method="get">
+                            <input class="email-form__name" type="text" name="user-name" placeholder="Имя">
+                            <input class="email-form__phone" type="number" name="user-phone" placeholder="Телефон">
+                            <button class="email-form__btn" type="submit">ОТПРАВИТЬ</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <section class="footer-block">
+                <div class="footer-container">
+                    <h3 class="footer__title">Адрес</h3>
+                    <p class="footer__subtitle">
+                        Pipang Ltd, Griva Digeni,<br>
+                         81-83 Jacovides Tower, 1st Floor<br>
+                        1090 Picosia USA
+                    </p>
+                    <p class="footer__copyright">Copyright 2021 CloudBudget</p>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
